@@ -2,19 +2,20 @@
   "name": "7.6.-cypress-1",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/IgorAndryuschenko/7.6.-Cypress-1#readme",
+  "homepage": "https://github.com/backupwow2085/7.6.-Cypress-1#readme",
   "bugs": {
-    "url": "https://github.com/IgorAndryuschenko/7.6.-Cypress-1/issues"
+    "url": "https://github.com/backupwow2085/7.6.-Cypress-1/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IgorAndryuschenko/7.6.-Cypress-1.git"
+    "url": "git+https://github.com/backupwow2085/7.6.-Cypress-1.git"
   },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "cy:all": "npm run cy:laptop:headless && npm run cy:mobile:headless",
     "cy:laptop:headless": "cypress run --config-file cypress.config.js --browser edge",
     "cy:laptop:headed": "cypress run --config-file cypress.config.js --browser edge --headed",
     "cy:mobile:headless": "cypress run --config-file cypress.mobile.config.js --browser chrome",
@@ -22,5 +23,8 @@
   },
   "dependencies": {
     "cypress": "^15.15.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0"
   }
 }
